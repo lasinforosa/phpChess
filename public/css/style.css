@@ -1,0 +1,63 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+#gameBoard { margin-bottom: 20px; }
+/* Add more styles as needed */
+
+/* Styles for PGN data display */
+.pgn-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pgn-headers, .pgn-moves {
+    width: 48%; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    max-height: 400px; /* Or as desired */
+    overflow-y: auto;
+}
+
+.pgn-headers h2, .pgn-moves h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.pgn-headers dl {
+    margin: 0;
+    padding: 0;
+}
+
+.pgn-headers dt {
+    font-weight: bold;
+    float: left;
+    width: 80px; /* Adjust as needed */
+    clear: left;
+}
+
+.pgn-headers dd {
+    margin-left: 90px; /* Adjust to be > dt width */
+    margin-bottom: 5px;
+}
+
+.pgn-moves ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin:0;
+    column-count: 2; /* Display moves in two columns */
+    column-gap: 20px;
+}
+
+.pgn-moves li {
+    margin-bottom: 5px; /* Spacing between move pairs */
+    /* display: inline-block; remove for column layout */
+    /* margin-right: 10px; remove for column layout */
+}
+
+.pgn-moves li .move-number {
+    font-weight: bold;
+    margin-right: 5px;
+}

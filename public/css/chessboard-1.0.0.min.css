@@ -1,0 +1,17 @@
+/* Placeholder for chessboard-1.0.0.min.css */
+/* The actual library CSS needs to be downloaded from https://chessboardjs.com */
+/* and pasted here due to download issues with the automated tools. */
+
+/* Basic styling to make the board container visible if nothing else loads */
+.chessboard-1-0-0 {
+  border: 1px solid #333;
+  box-sizing: content-box; /* Default for chessboard.js */
+}
+
+/* Add some minimal styling that might be expected by the JS, to reduce errors */
+.piece-417db { /* Example class name from chessboard.js, actual might differ */
+  width: 12.5%; /* 100% / 8 squares */
+  height: 12.5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
